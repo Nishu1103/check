@@ -1,0 +1,83 @@
+/* Room Section Styling */
+.rooms-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  .room {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: calc(45% - 20px); /* Make the cards smaller for more balanced spacing */
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  }
+  
+  .room:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 800px) {
+    .room {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
+  
+  /* Room Images Styling */
+  .image-box {
+    width: 100%;
+    height: 250px; /* Consistent height */
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+  }
+  
+  .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images do not stretch */
+  }
+  
+  /* Room Info */
+  .room-info {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .room-info h3 {
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .room-info .price {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .room-info .book-now {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #a98f3c; /* Gold-like color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .room-info .book-now:hover {
+    background-color: #8a762b; /* Darker shade */
+  }
+  
+  . 
