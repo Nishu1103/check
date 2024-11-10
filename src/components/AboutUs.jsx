@@ -2,7 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import dummyImage from './accets/8316292.jpg'; 
+import dummyImage from './accets/cpic4.jpg'; 
 
 const AboutUsContainer = styled(motion.section)`
   background-color: #f8f8f8;
@@ -93,6 +93,7 @@ const AboutUs = () => (
       <div className="image">
         <img src={dummyImage} alt="About Us" />
       </div>
+      
     </div>
   </AboutUsContainer>
 );

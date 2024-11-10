@@ -74,10 +74,10 @@ const AttractionsContainer = styled(motion.section)`
 // Main component with image data and display logic
 const Attractions = () => {
   const attractions = [
-    { src: '/assets/a2.jpg', caption: 'Breathtaking Landscapes' },
-    { src: '/assets/a2.jpg', caption: 'Cultural Wonders' },
-    { src: '/assets/a2.jpg', caption: 'Hidden Gems' },
-    { src: '/assets/a2.jpg', caption: 'Local Adventures' }
+    { src: '/assets/cpic1.jpg', caption: 'Breathtaking Landscapes' },
+    { src: '/assets/cpic2.png', caption: 'Cultural Wonders' },
+    { src: '/assets/cpic3.png', caption: 'Hidden Gems' },
+    { src: '/assets/cpic4.jpg', caption: 'Local Adventures' }
   ];
 
   return (

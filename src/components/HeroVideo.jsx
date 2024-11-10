@@ -1,5 +1,5 @@
 // HeroVideo.jsx
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import casbaVideo from './accets/casba.mp4';
@@ -31,22 +31,36 @@ const VideoContainer = styled(motion.div)`
     @media (max-width: 768px) {
       font-size: 2em; /* Smaller font for tablets */
     }
-    
+
     @media (max-width: 480px) {
       font-size: 1.5em; /* Smaller font for mobile */
     }
   }
 `;
 
-const HeroVideo = () => (
-  <VideoContainer
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 1.2 }}
-  >
-    <video autoPlay loop muted src={casbaVideo} />
-    <h1>Welcome  to Camp Kasbah</h1>
-  </VideoContainer>
-);
+const HeroVideo = () => {
+  const [showText, setShowText] = useState(true);
+
+  useEffect(() => {
+    // Set a timer to hide the text after 5 seconds
+    const timer = setTimeout(() => {
+      setShowText(false);
+    }, 3000); // 5000 milliseconds = 5 seconds
+
+    // Clean up the timer when the component unmounts
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <VideoContainer
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.2 }}
+    >
+      <video autoPlay loop muted src={casbaVideo} />
+      {showText && <h1>Welcome to Camp Kasbah</h1>}
+    </VideoContainer>
+  );
+};
 
 export default HeroVideo;
