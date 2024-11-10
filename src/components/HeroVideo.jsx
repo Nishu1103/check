@@ -45,7 +45,7 @@ const HeroVideo = () => (
     transition={{ duration: 1.2 }}
   >
     <video autoPlay loop muted src={casbaVideo} />
-    <h1>Welcome to Camp Kasbah</h1>
+    <h1>Welcome  to Camp Kasbah</h1>
   </VideoContainer>
 );
 
