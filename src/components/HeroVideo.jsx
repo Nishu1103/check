@@ -74,6 +74,8 @@ import casbaVideo from './accets/casba.mp4';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
+
 const VideoContainer = styled(motion.div)`
   position: relative;
   width: 100%;
@@ -120,23 +122,33 @@ const VideoContainer = styled(motion.div)`
 
 const HeroVideo = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [showText, setShowText] = useState(true);
+
+    useEffect(() => {
+     
+    const timer = setTimeout(() => {
+      setShowText(false);
+    }, 3000);  
+ 
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
 
-    // Initial check
+ 
     handleResize();
 
-    // Add event listener for resizing
+   
     window.addEventListener('resize', handleResize);
 
-    // Clean up event listener on component unmount
+    
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Settings for the carousel
+  
   const carouselSettings = {
     dots: true,
     infinite: true,
@@ -165,7 +177,7 @@ const HeroVideo = () => {
       ) : (
         <video autoPlay loop muted src={casbaVideo} />
       )}
-      <h1>Welcome to Camp Kasbah</h1>
+      {showText && <h1>Welcome to Camp Kasbah</h1>}
     </VideoContainer>
   );
 };
