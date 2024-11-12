@@ -10,6 +10,12 @@ const RoomsContainer = styled(motion.section)`
   color: #6E9099;
   padding: 40px 20px;
   text-align: center;
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 `;
 
 const Rooms = () => (
@@ -20,7 +26,7 @@ const Rooms = () => (
     viewport={{ once: true }}
     transition={{ duration: 0.8 }}
   >
-    <h2>Our Rooms</h2>
+    <h2 style={{ color: '#b55236', fontSize: '2em !important' }}>Our Rooms</h2>
     <div className="rooms-list">
       {roomsData.map((room, index) => (
         <motion.div
@@ -41,9 +47,14 @@ const Rooms = () => (
             ))}
           </div>
           <div className="room-info">
-            <h3>{room.type}</h3>
-            <p className="price">Price: {room.price} /-</p>
-            <a href="#booking" className="book-now">Book Now</a>
+          <div className="room-details">
+                <h3>{room.type}</h3>
+                <a href="#booking" className="book-now">Book Now</a>
+              </div>
+              <div className="pricing">
+                <p className="price">Map: {room.Map} /-</p>
+                <p className="price">CP: {room.cp} /-</p>
+              </div>
           </div>
 
           </div>

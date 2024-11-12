@@ -74,10 +74,25 @@
     border-radius: 8px;
     font-weight: bold;
     transition: background-color 0.3s;
+    text-align: center;
   }
   
   .room-info .book-now:hover {
     background-color: #8a762b; /* Darker shade */
   }
   
-  . 
+  .room-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .room-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pricing {
+    text-align: right;
+  }

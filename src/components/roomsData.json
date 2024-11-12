@@ -1,57 +1,41 @@
 [
     {
       "type": "Single Sharing",
-      "price": 3000,
+      "cp": 3000,
+      "Map": 3000,
       "images": [
+
+        "./assets/s.jpg"
        
       ]
     },
     {
       "type": "Double Sharing",
-      "price": 4000,
+      "cp": 4000,
+      "Map": 4000,
       "images": [
         "./assets/d2.jpg"
       ]
     },
     
-    {
-      "type": "Triple Sharing",
-      "price": 5250,
-      "images": [
-        "./assets/t3.jpg"
-      
-      ]
-    },
-    {
-        "type": "Triple Sharing",
-        "price": 5250,
-        "images": [
-          
-          "./assets/tr3.jpg"
-         
-        ]
-      },
+     
+    
       {
         "type": "Triple Sharing",
-        "price": 5250,
+        "cp": 5250,
+        "Map": 5250,
         "images": [
            
           "./assets/tri3.jpg"
            
         ]
       },
-      {
-        "type": "Triple Sharing",
-        "price": 5250,
-        "images": [
-           
-          "./assets/trip3.jpg"
-        ]
-      },
+     
 
     {
       "type": "Quad Sharing",
-      "price": 6500,
+      "cp": 6000,
+      "Map": 6500,
       "images": [
         "./assets/t4.jpg"
       ]

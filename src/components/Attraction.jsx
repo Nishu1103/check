@@ -10,7 +10,7 @@ const AttractionsContainer = styled(motion.section)`
 
   h2 {
     margin-bottom: 50px;
-    font-size: 2.8em;
+    font-size: 2em;
     color: #222;
     text-align: center;
   }
@@ -88,7 +88,7 @@ const Attractions = () => {
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
     >
-      <h2>Attractions</h2>
+      <h2 style={{ color: '#b55236', fontSize: '2em !important' }} >Attractions</h2>
       <div className="attractions-grid">
         {attractions.map((attraction, index) => (
           <motion.div

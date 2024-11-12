@@ -73,7 +73,7 @@ const AboutUs = () => (
     viewport={{ once: true }}
     transition={{ duration: 0.8 }}
   >
-    <h2>About Us</h2>
+    <h2 style={{ color: '#b55236', fontSize: '2em !important' }}>About Us</h2>
     <div className="content">
       <div className="text">
         <p>

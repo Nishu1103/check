@@ -103,7 +103,7 @@ const DiningContainer = styled.section`
 
     h3 {
       color: #b55236;
-      font-size: 2em;
+      font-size: 1.35em;
       text-align: center;
     }
 
@@ -194,7 +194,7 @@ const DiningContainer = styled.section`
     }
 
     .food-types h3 {
-      font-size: 1.5em;
+      font-size: 1.35em;
     }
 
     .food-types ul {
