@@ -28,6 +28,7 @@
     .room {
       width: 100%; /* Full width on smaller screens */
     }
+ 
   }
   
   /* Room Images Styling */
@@ -43,26 +44,27 @@
   .image-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure images do not stretch */
+    object-fit: cover;  
   }
   
-  /* Room Info */
+  
   .room-info {
-    padding: 20px;
+    padding: 15px;
     text-align: left;
   }
   
   .room-info h3 {
-    font-size: 1.2em;
+    font-size: 1.15em;
     font-weight: 600;
     color: #333;
     margin-bottom: 10px;
   }
   
   .room-info .price {
-    font-size: 1em;
+    font-size: 0.9em;
     color: #555;
     margin-bottom: 15px;
+    /* margin-top: 15px; */
   }
   
   .room-info .book-now {
@@ -96,5 +98,6 @@
   
   .pricing {
     text-align: right;
-    font-size: 1em;
+    font-size: 0.9em;
+    /* margin-top: 15px; */
   }

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 // Styled container for a more dynamic, immersive look
 const AttractionsContainer = styled(motion.section)`
-  padding: 60px;
+  padding: 40px;
   background-color: #f5f5f5;
   color: #6E9099;
 
