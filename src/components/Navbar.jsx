@@ -11,19 +11,19 @@ const NavbarContainer = styled.nav`
   background-color: #6E9099;
   color: #fff;
   position: fixed;
-  height: 100px;
+  height: 80px;
   width: 100%;
   z-index: 1000;
 
  img {
-  height: 200px;
+  height: 170px;
   width: auto;  
   max-width: 100%;  
   object-fit: contain;  
   margin-right: 20px;
 
   @media (max-width: 768px) {
-    height: 180px;
+    height: 150px;
     width: auto;
   }
 }
